@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>info sheet</h1>
+    <hr>
+    <form action="none" method="get" autocomplete="off">
+    <p>
+        <label for="name"> Name : </label>
+         <input type="text" name="id" id="name" placeholder="input your name">
+
+
+         <br><br>
+         <p>Man Or Female?</p> 
+         
+         <input type="radio" id="m" name="mf" value="1">
+         <label for="m">Male</label><br>
+         <input type="radio" id="f" name="mf" value="2">
+         <label for="f">Female</label><br>
+
+        
+         <br><br>
+         <label for="age">Age (between 1 and 100) : </label>
+         <input type="number" name="age" id="age" min="1" max="100" >
+
+         <br><br>
+        <label for="email"> Enter your E-mail :</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+
+
+
+
+        <br>
+        <br>
+        <p>Which language do you speak?</p> 
+        <input type="checkbox" id="lang1" name="l1" value="1">
+        <label for="leng1"> I can speak English</label><br>
+        <input type="checkbox" id="lang2" name="l2" value="2">
+        <label for="leng2"> I can speak Korean</label><br>
+        <input type="checkbox" id="lang3" name="l3" value="3">
+        <label for="leng3"> I can speak Spanish</label><br>
+        <input type="checkbox" id="lang4" name="l4" value="4">
+        <label for="leng4"> I can speak japanese</label><br>
+    
+        
+        <br>
+        <label for="food">What is your Favorite Food?</label>
+        <br>
+        <select id="fooe" name="Food">
+        <option value="1">한식</option>
+        <option value="2">중식</option>
+        <option value="3">일식</option>
+        <option value="4">양식</option>
+        </select>
+
+        <br>
+
+
+        <p><input type="submit" value ="Submit"></p>
+    </form>
+
+
+    </p>
+
+
+    
+</body>
+</html>

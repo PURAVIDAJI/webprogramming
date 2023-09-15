@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		body {background-color :linen;}
+	</style>
+	<script>
+		function show() {
+		let picture =getElementById("picture");
+		picture.src = "roadrunner.jpg";
+		picture.style.height = "60";
+		picture.style.width = "100";
+					
+		}	
+		
+		function hide() {
+		let picture =getElementById("picture");
+		picture.src = "";
+		picture.style.height = "";
+		picture.style.width = "";
+		
+		}
+
+	</script>
+
+
+</head>
+<body>
+    <h1>Cafe music</h1>
+    <hr>
+
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/oaIJNOqY1oQ?si=7--a6ndfuLb0-2Dk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+    </iframe>
+    
+    <br> <br>
+    There’s always some trending American pop music mixed in too, but much less than K-pop. However at fancier cafés, I often hear jazz or instrumental music. There are a couple cafés I go to that have different music on a given visit, either K-pop or instrumental. But mostly, I experience cafés sticking to ONLY pop or ONLY instrumental.
+    <hr>
+    <h1 onmouseover = "show()" onmouseout = "hide()"> RoadRunner</h1>
+    
+    <hr>	
+	<img id = "picture" src="" >
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>로그인 폼</h1>
+    <hr>
+    <form action="none" method="get" autocomplete="off">
+        <!-- http://127.0.0.1:5500/none? -->
+        <!-- http://127.0.0.1:5500/none?id=qqq&password=qqqq -->
+        <!-- method로 전달해야 내용이 안보이게 전달함 -->
+        <!-- http://127.0.0.1:5500/none - post로 전달하면 일케 됨 -->
+
+        <p>
+            <label for="id">ID :
+            </label>
+             <input type="text" name="id" id="id">
+        
+        </p>
+        <!-- 레이블로 식구로 묶어줌 -->
+    
+        <p> <label for="password"> PW : </label>
+        <input type="password" name="password" id="password">
+           <input type="submit" value ="LOG IN">
+        </p>
+        <p>
+            <!-- Checkbox는 중복선택가능 -->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="1">
+            <label for="vehicle1"> I have a bike</label><br>
+            <!-- 체크박스와 글자를 레이블 식구로 묶어서 글자 클릭해도 체크박스 인식됨 -->
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="2">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="3">
+            <label for="vehicle3"> I have a boat</label>
+
+            <!-- http://127.0.0.1:5500/none?id=&password=&vehicle1=Bike&vehicle2=Car&vehicle3=Boat -->
+            <!-- http://127.0.0.1:5500/none?id=&password=&vehicle1=1&vehicle2=2 -->
+        </p>
+
+
+        <p>
+
+            <!-- 라디오-exclusive 선택 -->
+            <input type="radio" id="html" name="fav_language" value="1">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="2">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="3">
+            <label for="javascript">JavaScript</label>
+        </p>
+
+
+        <!-- select는 옵션과 함께 사용되어야 한다 -->
+        <label for="cars"> choose a car </label>
+        <select id="cars" name="cars">
+            <option value="1">Volvo</option>
+            <option value="2">Saab</option>
+            <option value="3">Fiat</option>
+            <option value="4">Audi</option>
+          </select>
+
+
+
+    </form>
+    
+</body>
+</html>
