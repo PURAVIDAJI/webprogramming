@@ -1,0 +1,26 @@
+
+        /* 자식 */
+    div > .main {
+            background-color: linen;
+            
+    } 
+        /* 자기 태그, 클래스 main인것 */
+    body.main {
+            background-color: azure;
+    }
+        /* 자손 */
+    div strong{
+            color: blue;
+    }
+    li:hover{
+            background-color: hotpink;
+    }
+    tr:hover{
+            background-color: pink;
+    }
+    tr:nth-child(even){
+            background-color: blueviolet;
+    }
+    ol,ul {
+            color: green;
+    }
