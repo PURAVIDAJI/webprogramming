@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자식 */
+        div > .main {
+            background-color: linen;
+            
+        } 
+        /* 자기 태그, 클래스 main인것 */
+        body.main {
+            background-color: azure;
+        }
+        /* 자손 */
+        div strong{
+            color: blue;
+        }
+        li:hover{
+            background-color: hotpink;
+        }
+        tr:hover{
+            background-color: pink;
+        }
+        tr:nth-child(even){
+            background-color: blueviolet;
+        }
+        ol,ul {
+            color: green;
+        }
+    </style>
+</head>
+<body class = "main">
+    이번시간에 배우는 내용 <br>
+    Git <br>
+    HTML <br>
+    CSS  <br>
+    JavaScript
+    <div>
+
+    <ol class = "main">
+        <li>Git </li>
+        <li>HTML</li>
+        <li><strong>CSS</strong> </li>
+        <li>JavaScript</li>
+    </ol>
+
+    <ul class="main">
+        <li>과목 점수</li>
+        <li>Git 90</li>
+        <li>HTML 100</li>
+        <li><strong>CSS 80</strong></li>
+        <li>JavaScript 70</li>
+    </ul>
+
+    </div>
+    <table>
+       <thead>
+        <th align="left">과목</th>
+        <th>점수</th>
+       </thead>
+       <tbody>
+        <tr>
+            <td>Git</td>
+            <td align="right">90</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td align="right">100</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td align="right">80</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td align="right">70</td>
+        </tr>
+       </tbody>
+       
+
+       <tfoot>
+        <td>합계</td>
+        <td align="right">360</td>
+       </tfoot>
+
+
+
+
+    </table>
+</body>
+</html>
